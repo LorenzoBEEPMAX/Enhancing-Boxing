@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'portfolio',
+    'enhancing-boxing',
 ] + APPS + INTERNAL_APPS
 
 MIDDLEWARE = [
@@ -61,7 +61,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-ROOT_URLCONF = 'portfolio.urls'
+ROOT_URLCONF = 'enhancing-boxing.urls'
 
 TEMPLATE_DIRS = [BASE_DIR / app / 'templates' for app in APPS if (BASE_DIR / app / 'templates').is_dir()]
 print(f"Template_Dirs:  {TEMPLATE_DIRS}")
@@ -82,7 +82,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'portfolio.wsgi.application'
+WSGI_APPLICATION = 'enhancing-boxing.wsgi.application'
 
 DATABASES = {
     'default': {
