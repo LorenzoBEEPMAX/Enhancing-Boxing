@@ -1,0 +1,161 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, .home-container {
+  font-family: 'Helvetica', 'Myriad', Arial, sans-serif; 
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+.social-icons a {
+  color: #f0f0f0;
+  margin-left: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 40px 0;
+}
+
+.welcome-section {
+  flex: 2;
+}
+
+.welcome-section h1 {
+  font-size: 5rem;
+  font-weight: 300;
+}
+
+.welcome-section p {
+  margin-top: 20px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #d0d0d0;
+}
+
+.projects-section {
+  position: relative; 
+  flex: 1;
+  padding-left: 40px;
+  padding-top: 20px; 
+.projects-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0; 
+  bottom: 0;
+  width: 6px; 
+  background: linear-gradient(to bottom, #89CFF0, #005082); 
+  z-index: 4; 
+}
+
+.projects-section {
+  border-left: 2px solid transparent; 
+}
+
+
+.projects-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.projects-list {
+  list-style: none;
+}
+
+.projects-list li {
+  margin-bottom: 10px;
+}
+
+.projects-list a {
+  color: #ffd700;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer {
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.footer p {
+  text-align: center;
+} */
+
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.video-container {
+  width: 100%; /* Imposta la larghezza desiderata */
+  height: 690; /* Imposta l'altezza desiderata */
+  overflow: hidden; /* Nasconde le parti del video che escono dal contenitore */
+  position: relative; /* Per posizionare correttamente il video */
+}
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 1400px; /* Imposta la larghezza a 1920px */
+  height: auto; /* Mantieni l'altezza proporzionale */
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Mantenere il video dietro il testo */
+  padding:0 !important;
+}
+
+.welcome-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem; /* Regola la dimensione del font come preferisci */
+  color: #e1e1e1; /* Cambia il colore se necessario */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), /* Ombra principale */
+               -1px -1px 2px rgba(255, 255, 255, 0.5); /* Ombra secondaria per un effetto di profondità */
+  z-index: 1; /* Mantenere il testo sopra l'overlay */
+  opacity: 1; /* Mantieni il testo sempre visibile */
+  white-space: nowrap; /* Impedisce al testo di andare a capo */
+}
+
+
+.overlay {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0); /* Colore scuro con opacità */
+  z-index: 0; /* Mantenere l'overlay sotto il testo */
+  transition: opacity 1s ease; /* Aggiungi una transizione per l'opacità */
+}
+

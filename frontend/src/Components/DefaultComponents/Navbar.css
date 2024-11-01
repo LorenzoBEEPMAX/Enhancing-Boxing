@@ -1,0 +1,12 @@
+.custom-navbar{
+    position: absolute;
+    color: white !important;
+    border-bottom:whitesmoke
+}
+
+
+a{
+    color: #e1e1e1 !important;
+    text-decoration: none;
+    padding: 20px;
+}
